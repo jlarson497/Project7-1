@@ -59,5 +59,45 @@ namespace Project_7_1
             }
 
         }
+
+        public decimal OperatorMath(decimal operand1, decimal operand2)
+        {
+            decimal result = 0;
+            string smoothOperator = txtOperator.Text;
+            switch (smoothOperator)
+            {
+                case "*":
+                    result = operand1 * operand2;
+                    break;
+                case "/":
+                    result = operand1 / operand2;
+                    break;
+                case "+":
+                    result = operand1 + operand2;
+                    break;
+                case "-":
+                    result = operand1 - operand2;
+                    break;
+            }
+            return result;
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            decimal operand1 = Convert.ToDecimal(txtOperand1.Text);
+            decimal operand2 = Convert.ToDecimal(txtOperand2.Text);
+
+            decimal result = OperatorMath(operand1, operand2);
+
+            txtResult.Text = Convert.ToString(result);
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
