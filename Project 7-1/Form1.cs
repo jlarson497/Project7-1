@@ -92,9 +92,19 @@ namespace Project_7_1
                     resultString = Convert.ToString(result);
                     break;
                 case "/":
-                    result = operand1 / operand2;
-                    resultString = Convert.ToString(result);
-                    break;
+                    if (operand2 == 0)
+                    {
+                        MessageBox.Show("You cannot divide by 0.", "Entry Error");
+                        txtOperand2.Clear();
+                        txtOperand2.Focus();
+                        break;
+                    }
+                    else
+                    {
+                        result = operand1 / operand2;
+                        resultString = Convert.ToString(result);
+                        break;
+                    }
                 case "+":
                     result = operand1 + operand2;
                     resultString = Convert.ToString(result);
