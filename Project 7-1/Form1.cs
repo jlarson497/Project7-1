@@ -128,17 +128,26 @@ namespace Project_7_1
         //Click event for calculate button
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            if (!IsValidForm())
+
+            try
             {
-                return;
+                if (!IsValidForm())
+                {
+                    return;
+                }
+                decimal operand1 = Convert.ToDecimal(txtOperand1.Text);
+                decimal operand2 = Convert.ToDecimal(txtOperand2.Text);
+
+                string resultString = OperatorMath(operand1, operand2);
+
+                txtResult.Text = resultString;
             }
-            decimal operand1 = Convert.ToDecimal(txtOperand1.Text);
-            decimal operand2 = Convert.ToDecimal(txtOperand2.Text);
+            catch (Exception ex)
+            {
 
-            string resultString = OperatorMath(operand1, operand2);
-
-            txtResult.Text = resultString;
-
+                MessageBox.Show(ex.Message + "\n\n" + ex.GetType().ToString() + "\n" + ex.StackTrace, "Exception");
+            }
+            
         }
 
 
