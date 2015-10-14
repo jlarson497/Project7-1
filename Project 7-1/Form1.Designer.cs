@@ -48,7 +48,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Operand 1: ";
+            this.label1.Text = "Operand &1: ";
             // 
             // label2
             // 
@@ -57,7 +57,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Operator: ";
+            this.label2.Text = "&Operator: ";
             // 
             // label3
             // 
@@ -66,7 +66,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Operand 2: ";
+            this.label3.Text = "Operand &2: ";
             // 
             // label4
             // 
