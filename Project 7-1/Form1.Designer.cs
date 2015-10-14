@@ -83,6 +83,7 @@
             this.txtOperand1.Name = "txtOperand1";
             this.txtOperand1.Size = new System.Drawing.Size(100, 20);
             this.txtOperand1.TabIndex = 4;
+            this.txtOperand1.TextChanged += new System.EventHandler(this.txtOperand1_TextChanged);
             // 
             // txtOperator
             // 
@@ -90,6 +91,7 @@
             this.txtOperator.Name = "txtOperator";
             this.txtOperator.Size = new System.Drawing.Size(100, 20);
             this.txtOperator.TabIndex = 5;
+            this.txtOperator.TextChanged += new System.EventHandler(this.txtOperator_TextChanged);
             // 
             // txtOperand2
             // 
@@ -97,6 +99,7 @@
             this.txtOperand2.Name = "txtOperand2";
             this.txtOperand2.Size = new System.Drawing.Size(100, 20);
             this.txtOperand2.TabIndex = 6;
+            this.txtOperand2.TextChanged += new System.EventHandler(this.txtOperand2_TextChanged);
             // 
             // txtResult
             // 

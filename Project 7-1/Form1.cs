@@ -149,11 +149,32 @@ namespace Project_7_1
             }
             
         }
-
-
+        
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        //Method to clear the results textbox, to be used on the text changed event for each user input
+        private void ClearResults()
+        {
+            txtResult.Clear();
+        }
+
+        private void txtOperand1_TextChanged(object sender, EventArgs e)
+        {
+            ClearResults();
+        }
+
+        private void txtOperator_TextChanged(object sender, EventArgs e)
+        {
+            ClearResults();
+        }
+
+        private void txtOperand2_TextChanged(object sender, EventArgs e)
+        {
+            ClearResults();
         }
 
     }
