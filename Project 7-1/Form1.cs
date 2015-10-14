@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*************************************************************************
+ * This is a calculator that accepts 2 inputs and allows the user to choose
+ * the operator.  It uses a switch statement to go between the different
+ * calculations.
+ * 
+ * Produced by Joseph Larson
+ * ***********************************************************************/
+
 namespace Project_7_1
 {
     public partial class Form1 : Form
@@ -75,6 +83,8 @@ namespace Project_7_1
             string resultString = " ";
             string smoothOperator = txtOperator.Text;
             
+
+            //Switch based on the entry for the Operand, default validates that one of the correct 4 operators has been entered
             switch (smoothOperator)
             {
                 case "*":
